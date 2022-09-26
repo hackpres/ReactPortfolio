@@ -1,4 +1,3 @@
-import React from 'react';
 import UseWindowWidth from '../../utils/UseWindowWidth';
 import { ReactComponent as AHlogo } from '../../assets/icons/AHlogo.svg';
 

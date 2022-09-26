@@ -1,4 +1,3 @@
-import React from 'react';
 import { NavWrapper, NavList } from './navbarStyles';
 import getNavComponent from '../../utils/getNavComponent';
 

@@ -1,9 +1,10 @@
-import Title from '../components/title/Title';
+import { TitleShadow, TitleText } from "../components/title/titleStyles";
 
 export default function About() {
     return (
         <>
-            <Title />
+            <TitleShadow>ABOUT</TitleShadow>
+            <TitleText>About</TitleText>
         </>
     )
 }

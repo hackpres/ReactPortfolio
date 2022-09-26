@@ -1,9 +1,12 @@
-import Title from '../components/title/Title';
+import { TitleShadow, TitleText } from "../components/title/titleStyles";
+import Carousel from '../components/carousel/Carousel';
 
 export default function Portfolio() {
     return (
         <>
-            <Title />
+            <TitleShadow>WORK</TitleShadow>
+            <TitleText>Portfolio</TitleText>
+            <Carousel />
         </>
     )
 }
