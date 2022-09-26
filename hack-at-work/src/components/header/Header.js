@@ -1,12 +1,6 @@
 import React from 'react';
 import UseWindowWidth from '../../utils/UseWindowWidth';
-import logo from '../../assets/icons/AHlogo.svg';
-
-export const AHlogo = (props) => {
-    return (
-        <img src={logo} alt="Alex Hacker brand logo"></img>
-    )
-}
+import { ReactComponent as AHlogo } from '../../assets/icons/AHlogo.svg';
 
 const h1Style = {
     display: 'flex',
