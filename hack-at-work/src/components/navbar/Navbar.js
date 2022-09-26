@@ -4,7 +4,7 @@ import { InfoSquare } from '@styled-icons/bootstrap/InfoSquare';
 import { Portfolio } from '@styled-icons/zondicons/Portfolio';
 import { PaperPlane } from '@styled-icons/entypo/PaperPlane';
 import { PersonLinesFill } from '@styled-icons/bootstrap/PersonLinesFill';
-import { AHlogo } from '../Header';
+import { AHlogo } from '../../components/header/Header';
 import UseWindowWidth from '../../utils/UseWindowWidth';
 
 
@@ -13,13 +13,13 @@ function Navbar() {
         if (UseWindowWidth() < 768) {
             switch (menuOption) {
                 case 'About':
-                    return <InfoSquare size="12vw"/>
+                    return <NavLink href='/about'><InfoSquare size="12vw"/></NavLink>
                 case 'Contact':
-                    return <Portfolio size="12vw"/>
+                    return <NavLink href='/contact'><Portfolio size="12vw"/></NavLink>
                 case 'Portfolio':
-                    return <PaperPlane size="13vw"/>
+                    return <NavLink href='/portfolio'><PaperPlane size="13vw"/></NavLink>
                 case 'Resume':
-                    return <PersonLinesFill size="13vw"/>
+                    return <NavLink href='/resume'><PersonLinesFill size="13vw"/></NavLink>
                 default:
                     return 
             }
@@ -27,13 +27,13 @@ function Navbar() {
         } else {
             switch (menuOption) {
                 case 'About':
-                    return <NavLink href='#About'>About</NavLink>
+                    return <NavLink href='/about'>About</NavLink>
                 case 'Contact':
-                    return <NavLink href='#Contact'>Contact</NavLink>
+                    return <NavLink href='/contact'>Contact</NavLink>
                 case 'Portfolio':
-                    return <NavLink href='#Portfolio'>Portfolio</NavLink>
+                    return <NavLink href='/portfolio'>Portfolio</NavLink>
                 case 'Resume':
-                    return <NavLink href='#Resume'>Resume</NavLink>
+                    return <NavLink href='/resume'>Resume</NavLink>
                 default:
                     return <AHlogo width="225" height="155"/>
             }
