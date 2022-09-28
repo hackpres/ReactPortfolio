@@ -2,21 +2,21 @@ import { NavWrapper, NavList } from './navbarStyles';
 import getNavComponent from '../../utils/getNavComponent';
 
 
-function Navbar() {
+function Navbar(props) {
     return (
         <NavWrapper>
             <NavList>
-                {getNavComponent('About')}
+                {getNavComponent('About', props.page)}
             </NavList>
             <NavList>
-                {getNavComponent('Contact')}
+                {getNavComponent('Portfolio', props.page)}
             </NavList>
-            {getNavComponent('Home')}
+            {getNavComponent('')}
             <NavList>
-                {getNavComponent('Portfolio')}
+                {getNavComponent('Contact', props.page)}
             </NavList>
             <NavList>
-                {getNavComponent('Resume')}
+                {getNavComponent('Resume', props.page)}
             </NavList>
         </NavWrapper>
     );

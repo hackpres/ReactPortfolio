@@ -1,4 +1,3 @@
-import Navbar from './components/navbar/Navbar';
 import Header from './components/header/Header';
 import About from './pages/About';
 import Contact from './pages/Contact';
@@ -23,7 +22,6 @@ function App() {
   return (
     <>
       <GlobalStyle />
-      <Navbar />
       <Header />
       <Routes>
         <Route path='/' element={<Portfolio />}/>

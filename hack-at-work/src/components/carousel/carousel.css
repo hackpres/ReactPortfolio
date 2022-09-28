@@ -1,0 +1,62 @@
+.carousel {
+    position: relative;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image {
+    border-radius: 10px;
+}
+
+.right-arrow, .left-arrow {
+    position: absolute;
+    top: 50%;
+    font-size: 3rem;
+    color: #11526c;
+    z-index: 10;
+    cursor: pointer;
+    user-select: none;
+    background-color: #dfebe8;
+    border-radius: 10px;
+}
+.right-arrow {
+    right: 18px;
+}
+.left-arrow {
+    left: 18px;
+}
+
+.slide {
+    opacity: 0;
+    transition-duration: 1s ease;
+}
+.slide.active {
+    opacity: 1;
+    transition-duration: 1s;
+    transform: scale(1.08);
+}
+
+h3 {
+    color: #243637;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.65rem;
+    margin-bottom: 0;
+}
+
+p {
+    color: #243637;
+    margin-top: 0;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    font-size: 1.25rem;
+}
+
+.github-link {
+    color: #243637;
+    margin-left: .5rem;
+}

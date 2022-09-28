@@ -1,9 +1,12 @@
-import Title from '../components/title/Title';
+import { TitleShadow, TitleText } from "../components/title/titleStyles";
+import Navbar from '../components/navbar/Navbar';
 
 export default function Resume() {
     return (
         <>
-            <Title />
+            <Navbar page='resume'/>
+            <TitleShadow>RESUME</TitleShadow>
+            <TitleText>Résumé </TitleText>
         </>
     )
 }
