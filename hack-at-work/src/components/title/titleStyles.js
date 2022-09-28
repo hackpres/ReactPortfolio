@@ -13,6 +13,7 @@ export const TitleShadow = styled.div`
     margin-left: -2rem;
     color: #dfebe8;
     content: ${props => props.shadow};
+    overflow-x: hidden;
 `;
 
 export const TitleText = styled.div`

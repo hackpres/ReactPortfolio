@@ -15,6 +15,7 @@ const GlobalStyle = createGlobalStyle`
     font-family: darkmode-on, sans-serif;
     font-weight: 100;
     font-style: normal;
+    overflox-x: hidden;
   }
 `;
 
