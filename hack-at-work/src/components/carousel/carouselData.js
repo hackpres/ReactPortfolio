@@ -27,7 +27,7 @@ const CarouselData = [
         image: `${CodeQuiz}`,
         alt: 'JavaScript Coding Quiz screenshot',
         description: 'Test your knowledge of JavaScript! This coding quiz was built to practice JS logic, and utilizes local storage to save a users Username, and HighScore!',
-        title: 'JavaScript Coding Quiz',
+        title: 'JavaScript Quiz',
         github: 'https://github.com/hackpres/codingQuiz',
         deployed: 'https://hackpres.github.io/codingQuiz/',
     },
