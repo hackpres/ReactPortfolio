@@ -61,6 +61,7 @@ const SocialLink = styled.a`
     &:hover {
         color: #11526c;
         opacity: .7;
+    }
 `;
 const FormWrapper = styled.div`
     overflowX: hidden;
