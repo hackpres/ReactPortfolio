@@ -23,10 +23,10 @@ const CarouselSlider = ({ slides }) => {
 
     return (
         <>
-            <h3>{slides[current].title} <a className='github-link' href={slides[current].github}><GithubSquare size="7vw" /></a></h3>
+            <h3>{slides[current].title} <a className='github-link' href={slides[current].github}><GithubSquare className='github-logo' /></a></h3>
             <section className='carousel'>
-                <ArrowLeftS className='left-arrow' size="14vw" onClick={prevSlide} />
-                <ArrowRightS className='right-arrow' size="14vw" onClick={nextSlide} />
+                <ArrowLeftS className='left-arrow' onClick={prevSlide} />
+                <ArrowRightS className='right-arrow' onClick={nextSlide} />
                 {CarouselData.map((slide, index) => {
                     return (
                         <div 

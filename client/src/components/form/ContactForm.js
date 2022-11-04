@@ -65,6 +65,7 @@ const SocialLink = styled.a`
 `;
 const FormWrapper = styled.div`
     overflowX: hidden;
+    margin-bottom: 104px;
 `;
 const logoStyle = {
     margin: 'auto 2rem',

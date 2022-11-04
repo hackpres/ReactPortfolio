@@ -1,33 +1,25 @@
-import DnD from '../../assets/images/dungeonsAndDevs.png';
-import DnDReact from '../../assets/images/dungeonsAndDevsReact.png';
-import KYM from '../../assets/images/knowYourMusic.png';
-import CodeQuiz from '../../assets/images/jsCodingQuiz.png';
-import JFForm from '../../assets/images/jfRequestForm.png';
-import PasswordGen from '../../assets/images/passwordGenerator.png';
-import Refactor from '../../assets/images/horiseon.png';
+const db = require('../config/connection');
+const { Projects } = require('../models/index');
+const DnD = require('../../client/src/assets/images/dungeonsAndDevs.png');
+const KYM = require('../../client/src/assets/images/knowYourMusic.png');
+const CodeQuiz = require('../../client/src/assets/images/jsCodingQuiz.png');
+const JFForm = require('../../client/src/assets/images/jfRequestForm.png');
+const PasswordGen = require('../../client/src/assets/images/passwordGenerator.png');
+const Refactor = require('../../client/src/assets/images/horiseon.png');
 
-
-const CarouselData = [
-    {
-        image: `${DnDReact}`,
-        alt: 'Dungeons and Devs app screenshot',
-        description: 'Dungeons and Devs is a the redesign of a previous card style web app, built with React and GraphQL. My involvment included JavaScript logic, wireframe/design, as well as deployment and database management.',
-        title: 'Dungeons and Devs',
-        github: 'https://github.com/hackpres/DnDevs_React',
-        deployed: 'https://dungeons-n-devs.herokuapp.com/',
-    },
+const ProjectsData = [
     {
         image: `${DnD}`,
-        alt: 'DnDevs app screenshot',
-        description: 'DnDevs is a simple card style web game. My involvment included battle logic, character class structure, design, and database structure.',
-        title: 'DnDevs',
+        alt: 'Dungeons and Devs app screenshot',
+        description: 'Team developed application. Dungeons and Devs is a simple card style web game. My involvment included battle logic, character class structure, design, and database structure.',
+        title: 'Dungeons & Devs',
         github: 'https://github.com/wtguenthner/Dungeons-Devs',
         deployed: 'https://dungeons-devs.herokuapp.com/',
     },
     {
         image: `${KYM}`,
         alt: 'Know Your Music screenshot',
-        description: 'Know Your Music is an application that allows a user to search for an artist. Using the Spotify API, Know Your Music will allow the user to see artist data such as albums/album covers, artist images, artist popularity, etc.',
+        description: 'Team developed application. Know Your Music is an application that allows a user to search for an artist. Using the Spotify API, Know Your Music will allow the user to see artist data such as albums/album covers, artist images, artist popularity, etc.',
         title: 'Know Your Music',
         github: 'https://github.com/hackpres/KnowYourMusic',
         deployed: 'https://hackpres.github.io/KnowYourMusic/',
@@ -66,4 +58,11 @@ const CarouselData = [
     },
 ];
 
-export default CarouselData;
+db.once('open', async () => {
+    try {
+        await Projects.deleteMany({});
+        await Projects.create(ProjectsData);
+    } catch (err) {
+        throw err;
+    }
+});

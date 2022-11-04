@@ -14,13 +14,17 @@ const NameHeading = styled.h3`
 `;
 export const BioText = styled.p`
     font-size: 1.24rem;
+    width; 30vw;
     margin: 1.5rem auto 1rem auto;
 
     @media (min-width: 768px) {
-        font-size: 1.5rem;
+        font-size: 1.25rem;
         width: 30vw;
         margin: auto auto auto 1.25rem;
-    
+    }
+    @media (min-width: 1000px) {
+        font-size: 38px;
+        width: 50%;
     }
 `;
 const ImageWrapper = styled.div`
@@ -29,11 +33,12 @@ const ImageWrapper = styled.div`
 `;
 const ImageFrame = styled.div`
     position: absolute;
-    bottom: 6.5rem;
+    display: flex;
+    bottom: 81px;
     width: 100%;
     background-color: #a3b1af;
 
-    @media (min-width: 768px) {
+    @media (min-width: 1000px) {
         position: relative;
         display: flex;
         justify-content: space-around;
@@ -42,12 +47,16 @@ const ImageFrame = styled.div`
     }
 `;
 const Photo = styled.img`
-    width: 16.5rem;
+    width: 8rem;
     display: flex;
     margin: auto;
     @media (min-width: 768px) {
         display: flex;
+        width: 10rem;
         margin: auto 1.25rem auto auto;
+    }
+    @media (min-width: 1000px) {
+        width: 300px;
     }
 `;
 

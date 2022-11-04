@@ -22,6 +22,7 @@ const CVDownloadLabel = styled.h6`
     font-weight: 100;
     color: #245637;
     text-align: right;
+    margin-bottom: 104px;
 `;
 const CVDownloadButton = styled.button`
     border: 4px solid #243637;
