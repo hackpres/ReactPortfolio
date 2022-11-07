@@ -68,7 +68,7 @@ function Footer() {
                     <CopyContainer>
                         <AHLogo width='80px' height='60px' style={AHLogoStyle}/>
                         <CopyText>
-                            Design and Developed
+                            Design and Development
                         </CopyText>
                     </CopyContainer>
                     <SocialContainer>

@@ -11,6 +11,7 @@ export const NavWrapper = styled.div`
     position: fixed;
     bottom 0;
     width: 100%;
+    z-index: 999;
 
     @media (min-width: 768px) {
         padding-block: 4em;
