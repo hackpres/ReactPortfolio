@@ -45,15 +45,15 @@ h3 {
     justify-content: center;
     align-items: center;
     font-size: 1.65rem;
-    margin-bottom: 0;
-    margin-top: 0;
+    margin-bottom: 1rem;
+    margin-top: 0.5rem;
 }
 
 p {
     color: #243637;
     margin-top: 0;
     width: 80%;
-    margin: auto auto 104px auto;
+    margin: .5rem auto 124px auto;
     text-align: center;
     font-size: .9rem;
 }

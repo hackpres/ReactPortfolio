@@ -1,0 +1,99 @@
+.input-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-family: darkmode-on, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.label-float {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    max-width: 400px;
+    position: relative;
+    padding-top: 13px;
+}
+
+.label-float input, 
+.label-float textarea {
+    font-style: normal;
+    background-color: #dfebe8;
+    border: 1px solid #11526c;
+    border-radius: 5px;
+    outline: none;
+    min-width: 250px;
+    padding: 15px 20px;
+    font-size: 16px;
+    transition: all .1s linear;
+    -webkit-transition: all .1s linear;
+    -moz-transition: all .1s linear;
+    -webkit-appearance: none;
+}
+
+.label-float input:focus, 
+.label-float textarea:focus {
+    border: 2px solid #dfebe8;
+}
+
+.label-float input::placeholder, 
+.label-float textarea::placeholder {
+    color: transparent;
+}
+
+.label-float label {
+    pointer-events: none;
+    position: absolute;
+    top: calc(50% - 8px);
+    left: 15px;
+    transition: all .1s linear;
+    -webkit-transition: all .1s linear;
+    -moz-transition: all .1s linear;
+    background-color: #dfebe8;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.label-float input:required:not(:placeholder-shown):invalid+label, 
+.label-float textarea:required:not(:placeholder-shown):invalid+label {
+color: red;
+}
+
+.label-float input:focus:required:not(:placeholder-shown):invalid, 
+.label-float textarea:focus:required:not(:placeholder-shown):invalid {
+border: 2px solid red;
+}
+
+.label-float input:focus+label,
+.label-float input:not(:placeholder-shown)+label, 
+.label-float textarea:focus+label, 
+.label-float textarea:not(:placeholder-shown)+label {
+font-size: 13px;
+top: 0;
+color: #11526c;
+}
+
+form {
+overflow-x: hidden;
+margin-bottom: 104px;
+}
+
+@media (min-width: 450px) {
+    form {
+        width: 50vw;
+        margin: auto;
+    }
+}
+@media (min-width: 1000px) {
+    form {
+        width: 30%;
+        margin: auto;
+    }
+}
+@media (min-width: 2000px) {
+    form {
+        width: 20%;
+        margin: auto;
+    }
+}

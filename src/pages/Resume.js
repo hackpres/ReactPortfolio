@@ -1,6 +1,6 @@
 import { TitleShadow, TitleText } from "../components/title/titleStyles";
 import Navbar from '../components/navbar/Navbar';
-import CV from "../components/cv.js/CV";
+import CV from "../components/cv/CV";
 import Footer from "../components/footer/Footer";
 
 export default function Resume() {
