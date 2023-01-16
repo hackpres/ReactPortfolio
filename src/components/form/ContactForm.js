@@ -3,7 +3,6 @@ import styled from 'styled-components';
 import { Instagram } from '@styled-icons/boxicons-logos/Instagram';
 import { LinkedinSquare } from '@styled-icons/boxicons-logos/LinkedinSquare';
 import { Github } from '@styled-icons/boxicons-logos/Github';
-import { default as UseWindowWidth } from '../../utils/UseWindowWidth';
 import './form.css';
 
 const ThankYouText = styled.h5`
@@ -63,11 +62,6 @@ const GithubStyle = styled(Github)`
     margin: auto 1rem;
     width: 5rem;
 `;
-const logoStyle = {
-    margin: 'auto 1rem',
-    width: '15vw',
-    height: '15vw',
-}
 
 const FORM_ENDPOINT = 'https://public.herotofu.com/v1/3767b440-5edd-11ed-b82c-5d75eaa7ccff';
 

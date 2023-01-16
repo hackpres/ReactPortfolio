@@ -14,7 +14,7 @@ const CarouselData = [
         description: 'Dungeons and Devs is a the redesign of a previous card style web app, built with React and GraphQL. My involvment included JavaScript logic, wireframe/design, as well as deployment and database management.',
         title: 'Dungeons and Devs',
         github: 'https://github.com/hackpres/DnDevs_React',
-        deployed: 'https://dungeons-n-devs.herokuapp.com/',
+        deployed: 'https://dn-devs-react.vercel.app/',
     },
     {
         image: `${DnD}`,
@@ -22,7 +22,7 @@ const CarouselData = [
         description: 'DnDevs is a simple card style web game. My involvment included battle logic, character class structure, design, and database structure.',
         title: 'DnDevs',
         github: 'https://github.com/wtguenthner/Dungeons-Devs',
-        deployed: 'https://dungeons-devs.herokuapp.com/',
+        deployed: 'https://dungeonsdevs.vercel.app/',
     },
     {
         image: `${KYM}`,
